@@ -34,6 +34,7 @@
     "bootstrap": "^3.3.7",
     "config": "^1.24.0",
     "react": "^0.14.7",
+    "react-bootstrap": "^0.30.7",
     "react-dom": "^0.14.7",
     "react-router": "^3.0.0",
     "webpack-dev-middleware": "^1.8.4"

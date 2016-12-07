@@ -3,7 +3,7 @@
  */
 import React from 'react';
 import { render } from 'react-dom';
-import { IndexRoute, Router, Route, browserHistory, IndexRedirect } from 'react-router';
+import { IndexRoute, Router, Route, browserHistory } from 'react-router';
 import App from './app';
 import Home from './components/home';
 import Receiving from './components/receiving';

@@ -2,7 +2,7 @@ const webpack = require('webpack');
 
 
 module.exports = {
-    entry: "./entry.js",
+    entry: "./src/routes.jsx",
     output: {
         path: __dirname,
         filename: "bundle.js"
