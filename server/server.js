@@ -15,14 +15,16 @@ app.use(bodyParser.json());
 const compiler = webpack(webpackConfig);
 app.use(webpackDevMiddleware(compiler, { publicPath: '/' }));
 
-app.use(express.static('./dist'));
+
 app.use('/api',api(r));
-app.get('*', (request, response) => response.sendFile(path.resolve(__dirname, '/dist', '../index.html')));
+app.use(express.static('../dist'));
+
+app.get('*', (request, response) => response.sendFile(path.resolve(__dirname, '../dist', 'index.html')));
 
 
   /*  app.get('/', function (req, res) { res.send('Hello World!') })*/
 
 app.listen(3000, () => {
-    console.log('Example app listening on port 3000!')
+    console.log('Example app listening on port 3000!');
 });
 
