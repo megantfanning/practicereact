@@ -37,7 +37,8 @@ export default function base(r, tableName) {
     router.post('/:id',(req,res) =>{
         const id=req.params.id;
         console.log(id, req.body);
-        r.table(tableName).get(id).update(req.body, { returnChanges: true })
+        // r.table(tableName).get(id).update(req.body, { returnChanges: true })
+        r.table(tableName).insert(req.body, {returnChanges:true })
             .run()
             .then((result) => {
                 console.log(result);

@@ -1,0 +1,37 @@
+title: Receiving
+type: object
+required:
+  - containerCount
+  - lineOfService
+properties:
+  lineOfService:
+    $ref: /api/schemas/fields|line-of-service
+  label:
+    title: Patient
+    type: object
+    required:
+      - lastName
+      - firstName
+      - DOB
+    properties:
+      lastName:
+        title: Last Name
+        type: string
+      firstName:
+        title: First Name
+        type: string
+      DOB:
+        title: DOB
+        type: string
+        format: date
+  containerCount:
+    title: Number of Containers
+    type: integer
+  receivedDate:
+    title: Date/Time Received
+    type: string
+    format: date-time
+  station:
+    title: Station
+    type: string
+    default: receiving

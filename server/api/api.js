@@ -10,5 +10,6 @@ export default (r) => {
   api.use(bodyParser.json({ limit: '16mb' }));
   /* list of functions to use */
   api.use('/patients', base(r, 'patients'));
+  api.use('/cases', base(r,'cases'));
   return api;
 };
