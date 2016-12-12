@@ -12,7 +12,8 @@ render((
     <Router history={browserHistory}>
       <Route path="/" component={App}>
         <IndexRoute component={Home} />
-        <Route path="receiving" component={Receiving} />
+        <Route path="Receiving" component={Receiving} />
+        <Route path="cases" component={Cases} />
       </Route>
     </Router>
 ), document.getElementById('app'));
